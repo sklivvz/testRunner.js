@@ -1,6 +1,6 @@
 {
   "name": "testrunner.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An absolutely minimalistic javascript test runner",
   "main": "testRunner.js",
   "scripts": {

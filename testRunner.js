@@ -21,5 +21,10 @@ module.exports = {
                 }
             }
         }
+    },
+    areEqual: function (a,b) {
+        if (a !== b) {
+            throw "failed assert, wanted '"+a+"', got '"+b+"'.";
+        }
     }
 }
