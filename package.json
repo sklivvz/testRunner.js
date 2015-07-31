@@ -1,0 +1,22 @@
+{
+  "name": "testrunner.js",
+  "version": "0.1.0",
+  "description": "An absolutely minimalistic javascript test runner",
+  "main": "testRunner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sklivvz/testRunner.js.git"
+  },
+  "keywords": [
+    "tests"
+  ],
+  "author": "Marco Cecconi <marco.cecconi+npm@gmail.com> (http://sklivvz.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sklivvz/testRunner.js/issues"
+  },
+  "homepage": "https://github.com/sklivvz/testRunner.js#readme"
+}
