@@ -22,12 +22,20 @@ module.exports = {
             }
         }
     },
-    areEqual: function (a,b) {
-        if (a !== b) {
-            throw "failed assert, wanted '"+a+"', got '"+b+"'.";
+    areEqual: function (expected,actual) {
+        if (expected !== actual) {
+            throw (new Error("failed assert, wanted '"+expected+"', got '"+actual+"'."));
         }
     },
-    fail: function(a) {
-        throw "failed assert, "+a;
+    fail: function(reason) {
+        throw (new Error("failed assert, "+reason));
+    },
+    throws: function (action) {
+        try {
+            action();
+        } catch(ex) {
+            return null;
+        }
+        throw (new Error("failed assert, exception expected."));
     }
 };
