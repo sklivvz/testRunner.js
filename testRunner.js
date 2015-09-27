@@ -26,5 +26,8 @@ module.exports = {
         if (a !== b) {
             throw "failed assert, wanted '"+a+"', got '"+b+"'.";
         }
+    },
+    fail: function(a) {
+        throw "failed assert, "+a;
     }
-}
+};
